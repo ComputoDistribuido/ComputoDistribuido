@@ -31,12 +31,15 @@ For learn distributed system, we need to learn through the experimentation and s
 At this time we know how to learn distributed system, the next we're gonna cover a few topics.
 
 ### Topics in Distributed Systems
+
 - #### How systems fail
+
 The first thing we need to have to really understand how will computers breaks. Because if we don't know how computers breaks it's hard to build a system that tolerates those breakages and keeps on working.
 Well,for tolerate a failure we're gonna need a language to talk about that failure, we alredy have a common language for that situations and they are SLIs, SLOs and SLAs.
 ---
 # Lesson 4 
 > What could go wrong? 
+
 A distributed system by its nature it is more exposed to failures and attacks, since a distributed system it is not only one device it may be a few servers on distinct locations each and single one node of the system is exposed to failure by its own, but this may be a not so bad feature of a distributed system, if a single node fails that doesn't mean he whole system goes down. Although on occasions the node that fails it’s of high importance to the system, for example a database server goes down, the entry point being attacked by a DDoS attack that overflows the whole system, but there is not only security failures there are also other problems like keeping th Up-time of the server, this implies having the economy resources to have a strong infrastructure to keep the up-time of the system
 ---
 
