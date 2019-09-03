@@ -47,6 +47,39 @@ A distributed system by its nature it is more exposed to failures and attacks, s
 ---
 
 ## Lesson 5
+### The many types of fail
+
+There are a huge number of ways in which distributed systems can fail.
+
+#### Network failure vs node failure
+
+#### Network failure
+- Lose packets
+- Corruption
+- Routing issues
+- Congestion Collapse
+ 
+TCP/IP it deals with things like multipath effects and cogestion and having to retransmit on lost packets.
+Another important topic is the security, and the simple way to secure an distributed system is it's using an SSH will provide an encrypted tunnel between any two nodes. 
+
+##### Loss of connectivity
+
+Consider a distributed system, for example we have a generalized distributed system where every node ins't necessarily connected to every node, for this example it is a connected network. What happens if one of those nodes goes down, when that node goes away we've lost connectivity between one sub nodes and another sub nodes this is called a network partition. This is bad news for many algorithms we might be running in our distributed systems all the time.
+
+> Partition: at least 2 components of system continue to run, but can't communicate.
+
+#### Node failures
+- Fail stop
+  - Crash
+  - Power outage
+  - Hardware failure
+  - Out of memory/disk full
+- Strategies
+  - Checkpoint state and restart
+    - High latency
+  - Replicate state and fail over
+    - High cost
+
 
 ---
 
