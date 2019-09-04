@@ -88,3 +88,12 @@ Consider a distributed system, for example we have a generalized distributed sys
 > Byzantine fault tolerance
 
 The byzantine failure is a very specific type of failure specially on distributed systems, it’s basically a fault tolerance for when a node or more in our network gets partial failure, for example a node gets hacked, or a wrong computation etc, how it’s the rest of the network going to react, or it’s even capable of knowing about the failure, by default a distributed can’t go down that would be the worst case scenario, so it’s has to have a procedure to handle this type of failures. They exist a few ways to handle this for example verifying the result of allie nodes in out network, but that bring us to a another problematic howo our we going to confirm if that node is really an allie, and that's what is called the byzantine failure.
+
+
+--- 
+
+## Lesson 8
+
+>Example Projects
+
+On this lecture two types of distributed systems are presented, both do the same thing a simple chat application, the main difference its the architecture of the systems, one it's made with a  gcp service to host applications, the second one its a custom made system, on wich we can observed how a real  distributed system works, and all the complications that were presented, showing how distributed systems are more complicated by default, it really takes a lot of work to make a state of art distributed system today.
