@@ -91,7 +91,16 @@ The byzantine failure is a very specific type of failure specially on distribute
 
 
 --- 
+## Lesson 7
+> ### Measuring realibility and performance
 
+When we want to build a distributed system we really want to make more realible than a centraliced system. Measure the reliability and the perform of the own system we need a vocabulary to define how well we are doing.
+
+That vocabulary it might be a SLI, SLO, SLA just for example. These measures are to compare how the system it's doing.
+
+Well, the key about all of this it's make your system more resistant to some hardware problems. Reduce the downtime per months and guarantee the performance.
+
+---
 ## Lesson 8
 
 >Example Projects
