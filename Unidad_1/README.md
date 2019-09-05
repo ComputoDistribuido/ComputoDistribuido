@@ -112,3 +112,10 @@ On this lecture two types of distributed systems are presented, both do the same
 > ### Paxos Simplified
 
 Paxos is a consensus protocol proposed by Leslie Lamport, It's a little bit hard to understand for most computer scientists. The principal objective is trying to agree on a value. For example we have a bunch of computers connected in diferents places and these computers need to communicate over a network connection. But all the computers need to show the same value but for obviously reason this can't happen it, because all the computers are diferent. Well the paxos protocol make an consensus for all the computers to define the value for all the computers at the same time.
+
+---
+
+## Lesson 10
+> Time in Distributed Systems
+
+On this lecture we have a look of how time works in distributed systems, and how hard it is to handle, we take as example the game counter strike which is a FirstPersonShooter game, this game is a distributed system that has to handle multiple players at the same time, the approach that they take it’s to have  a mechanism to try to predict the players movement, this way when the real movements get to a player are compared with the server predictions, this example show the complexity behind a distributed system, but it also shows how a distributed system can solve complex, like it a online multiplayer game        
