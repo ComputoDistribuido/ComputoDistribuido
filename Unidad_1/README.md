@@ -106,3 +106,9 @@ Well, the key about all of this it's make your system more resistant to some har
 >Example Projects
 
 On this lecture two types of distributed systems are presented, both do the same thing a simple chat application, the main difference its the architecture of the systems, one it's made with a  gcp service to host applications, the second one its a custom made system, on wich we can observed how a real  distributed system works, and all the complications that were presented, showing how distributed systems are more complicated by default, it really takes a lot of work to make a state of art distributed system today.
+
+---
+## Lesson 9 
+> ### Paxos Simplified
+
+Paxos is a consensus protocol proposed by Leslie Lamport, It's a little bit hard to understand for most computer scientists. The principal objective is trying to agree on a value. For example we have a bunch of computers connected in diferents places and these computers need to communicate over a network connection. But all the computers need to show the same value but for obviously reason this can't happen it, because all the computers are diferent. Well the paxos protocol make an consensus for all the computers to define the value for all the computers at the same time.
