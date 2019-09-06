@@ -120,8 +120,16 @@ Paxos is a consensus protocol proposed by Leslie Lamport, It's a little bit hard
 
 On this lecture we have a look of how time works in distributed systems, and how hard it is to handle, we take as example the game counter strike which is a FirstPersonShooter game, this game is a distributed system that has to handle multiple players at the same time, the approach that they take it’s to have  a mechanism to try to predict the players movement, this way when the real movements get to a player are compared with the server predictions, this example show the complexity behind a distributed system, but it also shows how a distributed system can solve complex, like it a online multiplayer game        
 
+---
+## Lesson 11 
+> #### Introduction to Blockchain Consensus
+
+The blockchains it's here, all the problems for distributed systems are solved,this not really true, some problems are well solved with blockchain and others problems are terrible match trying solve the problem.
+To use it blockchain right, we need to understand how blockchains works and when we need to use it to solve some problems. 
+In the next videos we're gonna learn the bitcoin blockchains data structure.
 
 ---
+
 ## Lesson 12
 > What it’s a blockchain?
 
