@@ -143,3 +143,9 @@ The consensus of bitcoin is really simple, in theory. Well, the strawman consens
 
 ---
 
+## Lesson 15
+> #### Distributed System Design (Unique ID)
+
+Every distributed system process a thousand of transactions for multiple devices at the same time. It's need a way to manage each transaction and assign it some key or ID to identify every transaction. The simple way to solve this problem is generate an ID for every transaction with different parameters, such as, the identifier number of processor, the time of the day.
+
+---
