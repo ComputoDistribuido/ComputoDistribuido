@@ -135,4 +135,11 @@ In the next videos we're gonna learn the bitcoin blockchains data structure.
 
 On this lecture we have a introduction to what blockchain is and problem solves, so in simple words blockchain is a system that divides data or information in small chunks of data called block, each block has a identifier hash that is added to the next block in the chain so in theory every block is tied to the next block making a chain, but this chain has a purpose and it is to make every block verifiable since the hash that verifies it it’s contained on the next block and so on. 
 
+---
+## Lesson 13
+> #### Bitcoin Blockchain Consensus
+
+The consensus of bitcoin is really simple, in theory. Well, the strawman consensus algorithm said that any machine can join or leave at any time and any computer can create a block and these block it's replicated to all the good nodes throught the network. The requirements for bitcoin consensus are new blocks eventually replicated, newer blocks point to this new block, the consensus should be able to network partition tolerant. 
+
+---
 
