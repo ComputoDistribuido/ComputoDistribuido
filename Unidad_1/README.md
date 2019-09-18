@@ -155,3 +155,7 @@ The question presented on this lecture was to use or not to use the bitcoin cons
 Every distributed system process a thousand of transactions for multiple devices at the same time. It's need a way to manage each transaction and assign it some key or ID to identify every transaction. The simple way to solve this problem is generate an ID for every transaction with different parameters, such as, the identifier number of processor, the time of the day.
 
 ---
+## Lesson 16
+> The CAP Theorem
+
+On this lesson we take on what the CAP theorem is and how is present in a distributed system and in simple words, it states that it’s really hard or almost impossible to have a distributed system that’s capable of having data consistency, high availability and partition capabilities, and how in most of distributed system is a trade off of these features, and it is chosen according to the type of need or use case your system is serving.
