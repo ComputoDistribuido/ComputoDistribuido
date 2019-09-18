@@ -142,6 +142,12 @@ On this lecture we have a introduction to what blockchain is and problem solves,
 The consensus of bitcoin is really simple, in theory. Well, the strawman consensus algorithm said that any machine can join or leave at any time and any computer can create a block and these block it's replicated to all the good nodes throught the network. The requirements for bitcoin consensus are new blocks eventually replicated, newer blocks point to this new block, the consensus should be able to network partition tolerant. 
 
 ---
+## Lesson 14
+> Should you use Bitcoin Consensus?
+
+The question presented on this lecture was to use or not to use the bitcoin consensus on other distributed systems, one key points to consider is that bitcoin uses proof of work to control the fact that a node can join at any time, so the bitcoin consensus uses this a proof of work to verify if a block could join the network, this is a job incharge of the miners of the network to compute the calculation and validate the  new block hash, the output of this computation will let know the network if the block can join. There’s only one constraint on how the algorithm works, and is that if multiple node a=join the network the computation needed to validate a hash is upgraded so the time it takes to compute a hash is keeps the same.    
+
+---
 
 ## Lesson 15
 > #### Distributed System Design (Unique ID)
