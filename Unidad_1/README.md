@@ -1,5 +1,5 @@
-# Lesson 1 
-## What is a distributed system?
+## Lesson 1 
+> What is a distributed system?
 
 _An distribuited system it's a state divided over multiple computers. It's not a centralized system, this system is one where  the state of your system and the program is stored on a single computer._
 
@@ -11,8 +11,8 @@ _An distribuited system it's a state divided over multiple computers. It's not a
 > [Lesson URL](https://www.youtube.com/watch?v=7VbL89mKK3M&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A)
 ---
 
-# Lesson 2 
-## Why build a distributed system?
+## Lesson 2 
+> Why build a distributed system?
 _On this lesson we onboard use cases on which we need to use or build a distributed system, next up are some examples of case scenarios where a distributed system would be a great approach._ 
 
 - **Heavily intense computing applications that require a lot of processing**, for example a voice recognition system, for this type of application a distributed system would be a great choice, for example the vast majority of voice recognition system today, share the processing, first the device receiving or listening it’s only in charge of capturing the sound and sending it to a server with much more computing capacities, which is going to process the voice and return something to the other device
@@ -22,8 +22,8 @@ _On this lesson we onboard use cases on which we need to use or build a distribu
 > [Lesson URL](https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=2)
 
 ---
-# Leasson 3
-## How to learn distributed system?
+## Leasson 3
+> How to learn distributed system?
 
 Well, in this lesson we're going to learn how to learn distributed system?, the principal idea to learn is learn by doing.
 For learn distributed system, we need to learn through the experimentation and some times by taking apart, debugging, modifying an existing system.
@@ -47,7 +47,7 @@ A distributed system by its nature it is more exposed to failures and attacks, s
 ---
 
 ## Lesson 5
-### The many types of fail
+> The many types of fail
 
 There are a huge number of ways in which distributed systems can fail.
 
@@ -92,7 +92,7 @@ The byzantine failure is a very specific type of failure specially on distribute
 
 --- 
 ## Lesson 7
-> ### Measuring realibility and performance
+>  Measuring realibility and performance
 
 When we want to build a distributed system we really want to make more realible than a centraliced system. Measure the reliability and the perform of the own system we need a vocabulary to define how well we are doing.
 
@@ -109,7 +109,7 @@ On this lecture two types of distributed systems are presented, both do the same
 
 ---
 ## Lesson 9 
-> ### Paxos Simplified
+> Paxos Simplified
 
 Paxos is a consensus protocol proposed by Leslie Lamport, It's a little bit hard to understand for most computer scientists. The principal objective is trying to agree on a value. For example we have a bunch of computers connected in diferents places and these computers need to communicate over a network connection. But all the computers need to show the same value but for obviously reason this can't happen it, because all the computers are diferent. Well the paxos protocol make an consensus for all the computers to define the value for all the computers at the same time.
 
@@ -122,7 +122,7 @@ On this lecture we have a look of how time works in distributed systems, and how
 
 ---
 ## Lesson 11 
-> #### Introduction to Blockchain Consensus
+> Introduction to Blockchain Consensus
 
 The blockchains it's here, all the problems for distributed systems are solved,this not really true, some problems are well solved with blockchain and others problems are terrible match trying solve the problem.
 To use it blockchain right, we need to understand how blockchains works and when we need to use it to solve some problems. 
@@ -137,7 +137,7 @@ On this lecture we have a introduction to what blockchain is and problem solves,
 
 ---
 ## Lesson 13
-> #### Bitcoin Blockchain Consensus
+> Bitcoin Blockchain Consensus
 
 The consensus of bitcoin is really simple, in theory. Well, the strawman consensus algorithm said that any machine can join or leave at any time and any computer can create a block and these block it's replicated to all the good nodes throught the network. The requirements for bitcoin consensus are new blocks eventually replicated, newer blocks point to this new block, the consensus should be able to network partition tolerant. 
 
@@ -150,7 +150,7 @@ The question presented on this lecture was to use or not to use the bitcoin cons
 ---
 
 ## Lesson 15
-> #### Distributed System Design (Unique ID)
+> Distributed System Design (Unique ID)
 
 Every distributed system process a thousand of transactions for multiple devices at the same time. It's need a way to manage each transaction and assign it some key or ID to identify every transaction. The simple way to solve this problem is generate an ID for every transaction with different parameters, such as, the identifier number of processor, the time of the day.
 
