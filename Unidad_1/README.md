@@ -41,7 +41,7 @@ _On this lesson we onboard use cases on which we need to use or build a distribu
 > [Lesson URL](https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=2)
 
 ---
-## Leasson 3
+## Lesson 3
 > How to learn distributed system?
 
 Well, in this lesson we're going to learn how to learn distributed system?, the principal idea to learn is learn by doing.
