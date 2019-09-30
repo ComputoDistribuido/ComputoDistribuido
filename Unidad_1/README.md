@@ -1,3 +1,22 @@
+# Introduction to distributed systems
+
+- [**Lesson 1**](#lesson-1) - _What is a distributed system?_
+- [**Lesson 2**](#lesson-2) - _Why build a distributed system?_
+- [**Lesson 3**](#lesson-3) - _How to learn distributed system?_
+- [**Lesson 4**](#lesson-4) - _What could go wrong?_
+- [**Lesson 5**](#lesson-5) - _The many types of fail_
+- [**Lesson 6**](#lesson-6) - _Byzantine fault tolerance_
+- [**Lesson 7**](#lesson-7) - _Measuring realibility and performance_
+- [**Lesson 8**](#lesson-8) - _Example Projects_
+- [**Lesson 9**](#lesson-9) - _Paxos Simplified_
+- [**Lesson 10**](#lesson-10) - _Time in Distributed Systems_
+- [**Lesson 11**](#lesson-11) - _Introduction to Blockchain Consensus_
+- [**Lesson 12**](#lesson-12) - _What it’s a blockchain?_
+- [**Lesson 13**](#lesson-13) - _Bitcoin Blockchain Consensus_
+- [**Lesson 14**](#lesson-14) - _Should you use Bitcoin Consensus?_
+- [**Lesson 15**](#lesson-15) - _Distributed System Design (Unique ID)_
+- [**Lesson 16**](#lesson-16) - _The CAP Theorem_
+
 ## Lesson 1 
 > What is a distributed system?
 
@@ -103,7 +122,7 @@ Well, the key about all of this it's make your system more resistant to some har
 ---
 ## Lesson 8
 
->Example Projects
+> Example Projects
 
 On this lecture two types of distributed systems are presented, both do the same thing a simple chat application, the main difference its the architecture of the systems, one it's made with a  gcp service to host applications, the second one its a custom made system, on wich we can observed how a real  distributed system works, and all the complications that were presented, showing how distributed systems are more complicated by default, it really takes a lot of work to make a state of art distributed system today.
 
@@ -159,3 +178,10 @@ Every distributed system process a thousand of transactions for multiple devices
 > The CAP Theorem
 
 On this lesson we take on what the CAP theorem is and how is present in a distributed system and in simple words, it states that it’s really hard or almost impossible to have a distributed system that’s capable of having data consistency, high availability and partition capabilities, and how in most of distributed system is a trade off of these features, and it is chosen according to the type of need or use case your system is serving.
+
+&nbsp;
+   
+> Authored by:  
+
+- [Antonio Salgado](https://github.com/jascky)
+- [Vicente Garcia](https://github.com/VinceX2)
