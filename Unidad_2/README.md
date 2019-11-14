@@ -69,3 +69,45 @@ if __name__ == "__main__":
 These functions time.sleep() and asyncio.sleep() they are used as stand for any time-intensive processes that involve wait time. The function time.sleep() can represent any time consuming blocking function call, while asyncio.sleep() is used to stand in for a non-blocking call.
 
 ![count2](count2.png)
+
+## Coroutine
+
+
+Let's see this example given a coroutine makerandom() that keeps producing random integers in the range [0, 10], until one of them exceeds a threshold, you want to let multiple calls of this coroutine.
+
+```python
+import asyncio
+import random
+
+# ANSI colors
+c = (
+    "\033[0m",   # End of color
+    "\033[36m",  # Cyan
+    "\033[91m",  # Red
+    "\033[35m",  # Magenta
+)
+
+async def makerandom(idx: int, threshold: int = 6) -> int:
+    print(c[idx + 1] + f"Initiated makerandom({idx}).")
+    i = random.randint(0, 10)
+    while i <= threshold:
+        print(c[idx + 1] + f"makerandom({idx}) == {i} too low; retrying.")
+        await asyncio.sleep(idx + 1)
+        i = random.randint(0, 10)
+    print(c[idx + 1] + f"---> Finished: makerandom({idx}) == {i}" + c[0])
+    return i
+
+async def main():
+    res = await asyncio.gather(*(makerandom(i, 10 - i - 1) for i in range(3)))
+    return res
+
+if __name__ == "__main__":
+    random.seed(444)
+    r1, r2, r3 = asyncio.run(main())
+    print()
+    print(f"r1: {r1}, r2: {r2}, r3: {r3}")
+```
+
+This program uses one main coroutine, makerandom(), and runs it concurrently across 3 different inputs. Most programs will contain small, modular coroutines and one wrapper function that serves to chain each of the smaller coroutines together. main() is then used to gather tasks (futures) by mapping the central coroutine across some iterable or pool.
+
+![rand](rand.png)
