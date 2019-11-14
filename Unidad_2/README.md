@@ -45,7 +45,7 @@ The order of this output is the heart of async IO. Talking to each of the calls 
 
 ![count1](count1.png)
 
-#### Synchronous version**
+#### Synchronous version
 
 ```python
 import time
