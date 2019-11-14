@@ -13,3 +13,8 @@ In python we can access threading really easy by importing threading module
 `import threading`
 
 A mayor disadvantage for using threads is that is really hard to cordinate them, meaning there is no other mechanisim to control them, so can be very challenging to make concurrent code only using threads 
+
+### Coroutines
+Coroutines and concurrency go hand by hand. Coroutines are a general control structure in wich flow control is cooperatively passed between two different routines without returning.
+
+The 'yield' statement in Python is a good example. It creates a coroutine. When the 'yield ' is encountered the current state of the function is saved and control is returned to the calling function. The calling function can then transfer execution back to the yielding function and its state will be restored to the point where the 'yield' was encountered and execution will continue.
