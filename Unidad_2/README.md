@@ -20,7 +20,9 @@ Coroutines and concurrency go hand by hand. Coroutines are a general control str
 The 'yield' statement in Python is a good example. It creates a coroutine. When the 'yield ' is encountered the current state of the function is saved and control is returned to the calling function. The calling function can then transfer execution back to the yielding function and its state will be restored to the point where the 'yield' was encountered and execution will continue.
 
 ## Async IO
+
 This short program is the Hello World of async IO
+
 #### Asynchronous version
 
 ```python
@@ -111,3 +113,56 @@ if __name__ == "__main__":
 This program uses one main coroutine, makerandom(), and runs it concurrently across 3 different inputs. Most programs will contain small, modular coroutines and one wrapper function that serves to chain each of the smaller coroutines together. main() is then used to gather tasks (futures) by mapping the central coroutine across some iterable or pool.
 
 ![rand](rand.png)
+
+## Async IO Design Patterns
+Async IO comes with it's own set of posssible script designs.
+
+### Chaining Coroutines
+A key feature of coroutines is that they can be chained together. This allows us to break programs into smaller, manageable, recyclable coroutines.
+
+```python
+import asyncio
+import random
+import time
+
+
+async def part1(n: int) -> str:
+    i = random.randint(0, 10)
+    print(f"part1({n}) sleeping for {i} seconds.")
+    await asyncio.sleep(i)
+    result = f"result{n}-1"
+    print(f"Returning part1({n}) == {result}.")
+    return result
+
+
+async def part2(n: int, arg: str) -> str:
+    i = random.randint(0, 10)
+    print(f"part2{n, arg} sleeping for {i} seconds.")
+    await asyncio.sleep(i)
+    result = f"result{n}-2 derived from {arg}"
+    print(f"Returning part2{n, arg} == {result}.")
+    return result
+
+
+async def chain(n: int) -> None:
+    start = time.perf_counter()
+    p1 = await part1(n)
+    p2 = await part2(n, p1)
+    end = time.perf_counter() - start
+    print(f"-->Chained result{n} => {p2} (took {end:0.2f} seconds).")
+
+
+async def main(*args):
+    await asyncio.gather(*(chain(n) for n in args))
+
+if __name__ == "__main__":
+    import sys
+    random.seed(444)
+    args = [1, 2, 3] if len(sys.argv) == 1 else map(int, sys.argv[1:])
+    start = time.perf_counter()
+    asyncio.run(main(*args))
+    end = time.perf_counter() - start
+    print(f"Program finished in {end:0.2f} seconds.")
+
+```
+![chained](chained.png)
