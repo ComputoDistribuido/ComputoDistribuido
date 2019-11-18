@@ -45,6 +45,7 @@ if __name__ == "__main__":
 ```
 The order of this output is the heart of async IO. Talking to each of the calls to count() is a single event loop, or coordinator. When each task reaches await the function talks to the event loop and gives control back to it.
 
+### Output 
 ![count1](count1.png)
 
 #### Synchronous version
@@ -70,6 +71,7 @@ if __name__ == "__main__":
 
 These functions time.sleep() and asyncio.sleep() they are used as stand for any time-intensive processes that involve wait time. The function time.sleep() can represent any time consuming blocking function call, while asyncio.sleep() is used to stand in for a non-blocking call.
 
+### Output 
 ![count2](count2.png)
 
 ## Coroutine
@@ -112,6 +114,7 @@ if __name__ == "__main__":
 
 This program uses one main coroutine, makerandom(), and runs it concurrently across 3 different inputs. Most programs will contain small, modular coroutines and one wrapper function that serves to chain each of the smaller coroutines together. main() is then used to gather tasks (futures) by mapping the central coroutine across some iterable or pool.
 
+### Output 
 ![rand](rand.png)
 
 ## Async IO Design Patterns
@@ -165,4 +168,5 @@ if __name__ == "__main__":
     print(f"Program finished in {end:0.2f} seconds.")
 
 ```
+### Output 
 ![chained](chained.png)
