@@ -244,5 +244,3 @@ When a consumer pulls an item out, it simply calculates the elapsed time that th
 
 ### Output 
 ![asyncq](asyncq.png)
-
-## Asynchronous Requests
