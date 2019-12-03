@@ -7,6 +7,9 @@
 [Ss]cripts
 pyvenv.cfg
 .env
-venv
-.venv
+./venv/
+.venv/
 __pycache__
+.DS_Store
+DS_Store
+db.sqlite3
