@@ -6,7 +6,7 @@ In this practice we will see a general understanding of why celery message queue
 
 We need to create a new directory then inside it we will create a virtual enviroment.
 
-```python
+```zsh
 (venv) $ pip install Django Celery redis Pillow django-widget-tweaks
 (venv) $ pip freeze > requirements.txt
 ```
@@ -15,7 +15,7 @@ We need to create a new directory then inside it we will create a virtual enviro
 
 We created a Django project named image_parroter then a Django app named thumbnailer.
 
-```python
+```zsh
 (venv) $ django-admin startproject image_parroter
 (venv) $ cd image_parroter
 (venv) $ python manage.py startapp thumbnailer
@@ -49,12 +49,12 @@ CELERY_TASK_SERIALIZER = 'json'
 ```
 ### Run Django Application
 The next command line run the django server
-```python
+```zsh
 (venv) $ python manage.py runserver
 ```
 ### Run Celery
 The next command line run the celery
-```python
+```zsh
 (venv) $ celery worker -A image_parroter --loglevel=info
 ```
 
