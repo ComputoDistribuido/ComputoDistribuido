@@ -57,6 +57,14 @@ The next command line run the celery
 ```python
 (venv) $ celery worker -A image_parroter --loglevel=info
 ```
+
+### Run Redis with Docker
+We pull a image of Redis and created a Redis container. If the image doesn't exist the command run will create the container and then start running.
+```docker
+docker run -d -p 6379:6379 --name redis1 redis
+```
+
 ### Application running
+The Django server and Celery are running
 
 ![Thumbnail](Thumbnail.png)
