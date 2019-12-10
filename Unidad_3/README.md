@@ -47,3 +47,16 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
 ```
+### Run Django Application
+The next command line run the django server
+```python
+(venv) $ python manage.py runserver
+```
+### Run Celery
+The next command line run the celery
+```python
+(venv) $ celery worker -A image_parroter --loglevel=info
+```
+### Application running
+
+
