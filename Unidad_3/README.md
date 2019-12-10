@@ -59,4 +59,4 @@ The next command line run the celery
 ```
 ### Application running
 
-
+![Thumbnail](Thumbnail.png)
