@@ -1,0 +1,16 @@
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.env
+./venv/
+.venv/
+__pycache__
+.DS_Store
+DS_Store
+db.sqlite3
+.vscode
